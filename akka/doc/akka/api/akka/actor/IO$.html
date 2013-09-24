@@ -1,0 +1,1180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>IO - akka.actor.IO</title>
+          <meta name="description" content="IO - akka.actor.IO" />
+          <meta name="keywords" content="IO akka.actor.IO" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'akka.actor.IO$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/object_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="akka">akka</a>.<a href="package.html" class="extype" name="akka.actor">actor</a></p>
+        <h1>IO</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 2.2) use the new implementation in package akka.io instead">IO</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>IO messages and iteratees.</p><p>This is still in an experimental state and is subject to change until it
+has received more real world testing.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.2)</i> use the new implementation in package akka.io instead</p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph728" viewBox="0.00 0.00 3487.00 158.00" height="158pt" width="3487pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 3484,-154 3484,5 -4,5" stroke="white" fill="white"></polygon><!-- node0 --><g class="node class" id="graph728_0"><a xlink:title="akka.actor.IO.IterateeRefAsync" xlink:href="IO$$IterateeRefAsync.html#inheritance-diagram"><polygon points="132.25,-88 -0.25,-88 -0.25,-62 132.25,-62 132.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="32" text-anchor="start">IterateeRefAsync[A]</text></a></g><!-- node1 --><g class="node class" id="graph728_1"><a xlink:title="akka.actor.IO.IterateeRefSync" xlink:href="IO$$IterateeRefSync.html#inheritance-diagram"><polygon points="279,-88 151,-88 151,-62 279,-62 279,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="161" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="183" text-anchor="start">IterateeRefSync[A]</text></a></g><!-- node2 --><g class="node trait" id="graph728_2"><a xlink:title="akka.actor.IO.IterateeRef" xlink:href="IO$$IterateeRef.html#inheritance-diagram"><polygon points="194,-150 88,-150 88,-124 194,-124 194,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="98" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="120" text-anchor="start">IterateeRef[A]</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph728_2_0"><a xlink:title="IterateeRefAsync[A] is a subtype of IterateeRef[A]"><path d="M121.695,-120.556C109.08,-110.464 92.8395,-97.4716 81.1548,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="120.825,-122.101 125.823,-123.858 123.011,-119.368 120.825,-122.101" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2&#45;&gt;node1 --><g class="edge inheritance" id="graph728_2_1"><a xlink:title="IterateeRefSync[A] is a subtype of IterateeRef[A]"><path d="M160.047,-120.556C172.494,-110.464 188.518,-97.4716 200.047,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="158.757,-119.35 155.975,-123.858 160.961,-122.068 158.757,-119.35" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph728_3"><a xlink:title="akka.actor.IO.Failure" xlink:href="IO$$Failure.html#inheritance-diagram"><polygon points="372.25,-88 297.75,-88 297.75,-62 372.25,-62 372.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="308" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="330" text-anchor="start">Failure</text></a></g><!-- node4 --><g class="node class" id="graph728_4"><a xlink:title="akka.actor.IO.Next" xlink:href="IO$$Next.html#inheritance-diagram"><polygon points="467.25,-88 390.75,-88 390.75,-62 467.25,-62 467.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="401" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="423" text-anchor="start">Next[A]</text></a></g><!-- node5 --><g class="node class" id="graph728_5"><a xlink:title="akka.actor.IO.Done" xlink:href="IO$$Done.html#inheritance-diagram"><polygon points="566,-88 486,-88 486,-62 566,-62 566,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="496" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="518" text-anchor="start">Done[A]</text></a></g><!-- node6 --><g class="node class" id="graph728_6"><a xlink:title="akka.actor.IO.Iteratee" xlink:href="IO$$Iteratee.html#inheritance-diagram"><polygon points="474,-150 384,-150 384,-124 474,-124 474,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-145" x="394" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="416" text-anchor="start">Iteratee[A]</text></a></g><!-- node6&#45;&gt;node3 --><g class="edge inheritance" id="graph728_6_3"><a xlink:title="Failure is a subtype of Iteratee[A]"><path d="M405.626,-121.08C389.704,-110.917 368.894,-97.6342 353.994,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="404.821,-122.643 409.978,-123.858 406.705,-119.693 404.821,-122.643" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6&#45;&gt;node4 --><g class="edge inheritance" id="graph728_6_4"><a xlink:title="Next[A] is a subtype of Iteratee[A]"><path d="M429,-118.683C429,-108.896 429,-96.9026 429,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="427.25,-118.858 429,-123.858 430.75,-118.858 427.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6&#45;&gt;node5 --><g class="edge inheritance" id="graph728_6_5"><a xlink:title="Done[A] is a subtype of Iteratee[A]"><path d="M453.12,-121.08C469.55,-110.917 491.025,-97.6342 506.4,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="451.961,-119.74 448.629,-123.858 453.802,-122.716 451.961,-119.74" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph728_7"><a xlink:title="akka.actor.IO.Error" xlink:href="IO$$Error.html#inheritance-diagram"><polygon points="651.25,-88 584.75,-88 584.75,-62 651.25,-62 651.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="595" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="617" text-anchor="start">Error</text></a></g><!-- node8 --><g class="node object" id="graph728_8"><a xlink:title="akka.actor.IO.EOF" xlink:href="IO$$EOF$.html#inheritance-diagram"><polygon points="734.25,-88 669.75,-88 669.75,-62 734.25,-62 734.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-83" x="680" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="702" text-anchor="start">EOF</text></a></g><!-- node9 --><g class="node class" id="graph728_9"><a xlink:title="akka.actor.IO.Chunk" xlink:href="IO$$Chunk.html#inheritance-diagram"><polygon points="825.25,-88 752.75,-88 752.75,-62 825.25,-62 825.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="763" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="785" text-anchor="start">Chunk</text></a></g><!-- node10 --><g class="node trait" id="graph728_10"><a xlink:title="akka.actor.IO.Input" xlink:href="IO$$Input.html#inheritance-diagram"><polygon points="735.25,-150 668.75,-150 668.75,-124 735.25,-124 735.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="679" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="701" text-anchor="start">Input</text></a></g><!-- node10&#45;&gt;node7 --><g class="edge inheritance" id="graph728_10_7"><a xlink:title="Error is a subtype of Input"><path d="M680.746,-120.819C666.567,-110.691 648.174,-97.5529 634.973,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="679.915,-122.376 685.001,-123.858 681.95,-119.528 679.915,-122.376" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10&#45;&gt;node8 --><g class="edge inheritance" id="graph728_10_8"><a xlink:title="EOF is a subtype of Input"><path d="M702,-118.683C702,-108.896 702,-96.9026 702,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="700.25,-118.858 702,-123.858 703.75,-118.858 700.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10&#45;&gt;node9 --><g class="edge inheritance" id="graph728_10_9"><a xlink:title="Chunk is a subtype of Input"><path d="M724.013,-120.819C738.699,-110.691 757.748,-97.5529 771.42,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="722.728,-119.579 719.606,-123.858 724.715,-122.46 722.728,-119.579" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node class" id="graph728_11"><a xlink:title="akka.actor.IO.Write" xlink:href="IO$$Write.html#inheritance-diagram"><polygon points="910.25,-88 843.75,-88 843.75,-62 910.25,-62 910.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="854" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="876" text-anchor="start">Write</text></a></g><!-- node12 --><g class="node class" id="graph728_12"><a xlink:title="akka.actor.IO.Read" xlink:href="IO$$Read.html#inheritance-diagram"><polygon points="997,-88 929,-88 929,-62 997,-62 997,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="939" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="961" text-anchor="start">Read</text></a></g><!-- node13 --><g class="node class" id="graph728_13"><a xlink:title="akka.actor.IO.Closed" xlink:href="IO$$Closed.html#inheritance-diagram"><polygon points="1090.25,-88 1015.75,-88 1015.75,-62 1090.25,-62 1090.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1026" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1048" text-anchor="start">Closed</text></a></g><!-- node14 --><g class="node class" id="graph728_14"><a xlink:title="akka.actor.IO.Close" xlink:href="IO$$Close.html#inheritance-diagram"><polygon points="1179,-88 1109,-88 1109,-62 1179,-62 1179,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1119" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1141" text-anchor="start">Close</text></a></g><!-- node15 --><g class="node class" id="graph728_15"><a xlink:title="akka.actor.IO.Connected" xlink:href="IO$$Connected.html#inheritance-diagram"><polygon points="1290.25,-88 1197.75,-88 1197.75,-62 1290.25,-62 1290.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1208" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1230" text-anchor="start">Connected</text></a></g><!-- node16 --><g class="node class" id="graph728_16"><a xlink:title="akka.actor.IO.Connect" xlink:href="IO$$Connect.html#inheritance-diagram"><polygon points="1391,-88 1309,-88 1309,-62 1391,-62 1391,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1319" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1341" text-anchor="start">Connect</text></a></g><!-- node17 --><g class="node class" id="graph728_17"><a xlink:title="akka.actor.IO.Accept" xlink:href="IO$$Accept.html#inheritance-diagram"><polygon points="1484.25,-88 1409.75,-88 1409.75,-62 1484.25,-62 1484.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1420" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1442" text-anchor="start">Accept</text></a></g><!-- node18 --><g class="node class" id="graph728_18"><a xlink:title="akka.actor.IO.NewClient" xlink:href="IO$$NewClient.html#inheritance-diagram"><polygon points="1593,-88 1503,-88 1503,-62 1593,-62 1593,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1513" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1535" text-anchor="start">NewClient</text></a></g><!-- node19 --><g class="node class" id="graph728_19"><a xlink:title="akka.actor.IO.Listening" xlink:href="IO$$Listening.html#inheritance-diagram"><polygon points="1695,-88 1611,-88 1611,-62 1695,-62 1695,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1621" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1643" text-anchor="start">Listening</text></a></g><!-- node20 --><g class="node class" id="graph728_20"><a xlink:title="akka.actor.IO.Listen" xlink:href="IO$$Listen.html#inheritance-diagram"><polygon points="1784.25,-88 1713.75,-88 1713.75,-62 1784.25,-62 1784.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1724" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1746" text-anchor="start">Listen</text></a></g><!-- node21 --><g class="node trait" id="graph728_21"><a xlink:title="akka.actor.IO.IOMessage" xlink:href="IO$$IOMessage.html#inheritance-diagram"><polygon points="1344.25,-150 1249.75,-150 1249.75,-124 1344.25,-124 1344.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="1260" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1282" text-anchor="start">IOMessage</text></a></g><!-- node21&#45;&gt;node11 --><g class="edge inheritance" id="graph728_21_11"><a xlink:title="Write is a subtype of IOMessage"><path d="M1244.46,-131.744C1171.25,-125.262 1034.63,-111.164 920,-88 916.961,-87.3859 913.822,-86.6708 910.689,-85.9011" stroke="#d4d4d4" fill="none"></path><polygon points="1244.49,-133.503 1249.62,-132.197 1244.79,-130.016 1244.49,-133.503" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node12 --><g class="edge inheritance" id="graph728_21_12"><a xlink:title="Read is a subtype of IOMessage"><path d="M1244.32,-128.934C1185.98,-120.724 1089.27,-105.978 1007,-88 1003.75,-87.2901 1000.38,-86.4901 997.025,-85.6487" stroke="#d4d4d4" fill="none"></path><polygon points="1244.31,-130.698 1249.5,-129.659 1244.79,-127.232 1244.31,-130.698" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node13 --><g class="edge inheritance" id="graph728_21_13"><a xlink:title="Closed is a subtype of IOMessage"><path d="M1244.35,-123.337C1204.65,-113.749 1148.87,-100.191 1100,-88 1096.9,-87.2254 1093.68,-86.4163 1090.45,-85.6001" stroke="#d4d4d4" fill="none"></path><polygon points="1244.32,-125.132 1249.6,-124.604 1245.15,-121.73 1244.32,-125.132" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node14 --><g class="edge inheritance" id="graph728_21_14"><a xlink:title="Close is a subtype of IOMessage"><path d="M1261.24,-121.977C1234.97,-111.674 1199.64,-97.8202 1174.65,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="1260.74,-123.662 1266.04,-123.858 1262.02,-120.403 1260.74,-123.662" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node15 --><g class="edge inheritance" id="graph728_21_15"><a xlink:title="Connected is a subtype of IOMessage"><path d="M1282.89,-120.027C1274.05,-110.014 1262.82,-97.3091 1254.71,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1281.65,-121.269 1286.27,-123.858 1284.28,-118.952 1281.65,-121.269" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node16 --><g class="edge inheritance" id="graph728_21_16"><a xlink:title="Connect is a subtype of IOMessage"><path d="M1311.11,-120.027C1319.95,-110.014 1331.18,-97.3091 1339.29,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1309.72,-118.952 1307.73,-123.858 1312.35,-121.269 1309.72,-118.952" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node17 --><g class="edge inheritance" id="graph728_21_17"><a xlink:title="Accept is a subtype of IOMessage"><path d="M1332.06,-121.977C1357.82,-111.674 1392.45,-97.8202 1416.95,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="1331.35,-120.376 1327.35,-123.858 1332.65,-123.626 1331.35,-120.376" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node18 --><g class="edge inheritance" id="graph728_21_18"><a xlink:title="NewClient is a subtype of IOMessage"><path d="M1349.38,-123.478C1394.75,-112.634 1459.68,-97.1131 1502.8,-86.8048" stroke="#d4d4d4" fill="none"></path><polygon points="1348.96,-121.779 1344.51,-124.644 1349.78,-125.183 1348.96,-121.779" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node19 --><g class="edge inheritance" id="graph728_21_19"><a xlink:title="Listening is a subtype of IOMessage"><path d="M1349.52,-128.956C1410.46,-120.499 1513.87,-105.278 1602,-88 1604.86,-87.44 1607.8,-86.8325 1610.75,-86.1982" stroke="#d4d4d4" fill="none"></path><polygon points="1349.19,-127.234 1344.48,-129.653 1349.67,-130.701 1349.19,-127.234" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21&#45;&gt;node20 --><g class="edge inheritance" id="graph728_21_20"><a xlink:title="Listen is a subtype of IOMessage"><path d="M1349.36,-132.237C1427.2,-126.1 1577.84,-112.133 1704,-88 1707.18,-87.3924 1710.46,-86.6817 1713.74,-85.9149" stroke="#d4d4d4" fill="none"></path><polygon points="1349.19,-130.495 1344.34,-132.63 1349.46,-133.985 1349.19,-130.495" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node22 --><g class="node class" id="graph728_22"><a xlink:title="akka.actor.IO.TrafficClass" xlink:href="IO$$TrafficClass.html#inheritance-diagram"><polygon points="2115.25,-88 2018.75,-88 2018.75,-62 2115.25,-62 2115.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2029" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2051" text-anchor="start">TrafficClass</text></a></g><!-- node23 --><g class="node class" id="graph728_23"><a xlink:title="akka.actor.IO.TcpNoDelay" xlink:href="IO$$TcpNoDelay.html#inheritance-diagram"><polygon points="2232,-88 2134,-88 2134,-62 2232,-62 2232,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2144" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2166" text-anchor="start">TcpNoDelay</text></a></g><!-- node24 --><g class="node class" id="graph728_24"><a xlink:title="akka.actor.IO.SoTimeout" xlink:href="IO$$SoTimeout.html#inheritance-diagram"><polygon points="2342,-88 2250,-88 2250,-62 2342,-62 2342,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2260" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2282" text-anchor="start">SoTimeout</text></a></g><!-- node25 --><g class="node class" id="graph728_25"><a xlink:title="akka.actor.IO.SoLinger" xlink:href="IO$$SoLinger.html#inheritance-diagram"><polygon points="2444,-88 2360,-88 2360,-62 2444,-62 2444,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2370" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2392" text-anchor="start">SoLinger</text></a></g><!-- node26 --><g class="node class" id="graph728_26"><a xlink:title="akka.actor.IO.SendBufferSize" xlink:href="IO$$SendBufferSize.html#inheritance-diagram"><polygon points="2576,-88 2462,-88 2462,-62 2576,-62 2576,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2472" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2494" text-anchor="start">SendBufferSize</text></a></g><!-- node27 --><g class="node class" id="graph728_27"><a xlink:title="akka.actor.IO.Backlog" xlink:href="IO$$Backlog.html#inheritance-diagram"><polygon points="3120,-88 3040,-88 3040,-62 3120,-62 3120,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="3050" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="3072" text-anchor="start">Backlog</text></a></g><!-- node28 --><g class="node class" id="graph728_28"><a xlink:title="akka.actor.IO.ReuseAddress" xlink:href="IO$$ReuseAddress.html#inheritance-diagram"><polygon points="2704,-88 2594,-88 2594,-62 2704,-62 2704,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2604" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2626" text-anchor="start">ReuseAddress</text></a></g><!-- node29 --><g class="node class" id="graph728_29"><a xlink:title="akka.actor.IO.ReceiveBufferSize" xlink:href="IO$$ReceiveBufferSize.html#inheritance-diagram"><polygon points="2848,-88 2722,-88 2722,-62 2848,-62 2848,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2732" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2754" text-anchor="start">ReceiveBufferSize</text></a></g><!-- node30 --><g class="node class" id="graph728_30"><a xlink:title="akka.actor.IO.PerformancePreferences" xlink:href="IO$$PerformancePreferences.html#inheritance-diagram"><polygon points="3021.25,-88 2866.75,-88 2866.75,-62 3021.25,-62 3021.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="2877" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="2899" text-anchor="start">PerformancePreferences</text></a></g><!-- node31 --><g class="node class" id="graph728_31"><a xlink:title="akka.actor.IO.OOBInline" xlink:href="IO$$OOBInline.html#inheritance-diagram"><polygon points="1893,-88 1803,-88 1803,-62 1893,-62 1893,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1813" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1835" text-anchor="start">OOBInline</text></a></g><!-- node32 --><g class="node class" id="graph728_32"><a xlink:title="akka.actor.IO.KeepAlive" xlink:href="IO$$KeepAlive.html#inheritance-diagram"><polygon points="2000.25,-88 1911.75,-88 1911.75,-62 2000.25,-62 2000.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1922" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1944" text-anchor="start">KeepAlive</text></a></g><!-- node33 --><g class="node trait" id="graph728_33"><a xlink:title="akka.actor.IO.ServerSocketOption" xlink:href="IO$$ServerSocketOption.html#inheritance-diagram"><polygon points="2931,-150 2797,-150 2797,-124 2931,-124 2931,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="2807" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="2829" text-anchor="start">ServerSocketOption</text></a></g><!-- node33&#45;&gt;node27 --><g class="edge inheritance" id="graph728_33_27"><a xlink:title="Backlog is a subtype of ServerSocketOption"><path d="M2912.53,-122.519C2950.92,-111.854 3003.88,-97.1431 3039.9,-87.1392" stroke="#d4d4d4" fill="none"></path><polygon points="2911.8,-120.906 2907.45,-123.93 2912.74,-124.278 2911.8,-120.906" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node33&#45;&gt;node28 --><g class="edge inheritance" id="graph728_33_28"><a xlink:title="ReuseAddress is a subtype of ServerSocketOption"><path d="M2815.84,-122.56C2778.76,-112.211 2727.95,-98.0339 2692.18,-88.0504" stroke="#d4d4d4" fill="none"></path><polygon points="2815.46,-124.272 2820.75,-123.93 2816.4,-120.901 2815.46,-124.272" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node33&#45;&gt;node29 --><g class="edge inheritance" id="graph728_33_29"><a xlink:title="ReceiveBufferSize is a subtype of ServerSocketOption"><path d="M2844.01,-120.819C2830.68,-110.691 2813.38,-97.5529 2800.96,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2842.97,-122.228 2848.01,-123.858 2845.09,-119.44 2842.97,-122.228" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node33&#45;&gt;node30 --><g class="edge inheritance" id="graph728_33_30"><a xlink:title="PerformancePreferences is a subtype of ServerSocketOption"><path d="M2884.24,-120.819C2897.75,-110.691 2915.26,-97.5529 2927.83,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2883.14,-119.458 2880.19,-123.858 2885.24,-122.258 2883.14,-119.458" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34 --><g class="node trait" id="graph728_34"><a xlink:title="akka.actor.IO.SocketOption" xlink:href="IO$$SocketOption.html#inheritance-diagram"><polygon points="2401,-150 2297,-150 2297,-124 2401,-124 2401,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="2307" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="2329" text-anchor="start">SocketOption</text></a></g><!-- node34&#45;&gt;node22 --><g class="edge inheritance" id="graph728_34_22"><a xlink:title="TrafficClass is a subtype of SocketOption"><path d="M2292.01,-123.874C2240.15,-112.841 2164.45,-96.7339 2115.45,-86.3088" stroke="#d4d4d4" fill="none"></path><polygon points="2291.69,-125.596 2296.95,-124.925 2292.42,-122.173 2291.69,-125.596" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node23 --><g class="edge inheritance" id="graph728_34_23"><a xlink:title="TcpNoDelay is a subtype of SocketOption"><path d="M2310.56,-122.105C2282.02,-111.789 2243.48,-97.8609 2216.26,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="2310.11,-123.804 2315.41,-123.858 2311.3,-120.513 2310.11,-123.804" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node24 --><g class="edge inheritance" id="graph728_34_24"><a xlink:title="SoTimeout is a subtype of SocketOption"><path d="M2334.89,-120.027C2326.05,-110.014 2314.82,-97.3091 2306.71,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2333.65,-121.269 2338.27,-123.858 2336.28,-118.952 2333.65,-121.269" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node25 --><g class="edge inheritance" id="graph728_34_25"><a xlink:title="SoLinger is a subtype of SocketOption"><path d="M2363.11,-120.027C2371.95,-110.014 2383.18,-97.3091 2391.29,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="2361.72,-118.952 2359.73,-123.858 2364.35,-121.269 2361.72,-118.952" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node26 --><g class="edge inheritance" id="graph728_34_26"><a xlink:title="SendBufferSize is a subtype of SocketOption"><path d="M2388.37,-122.105C2417.6,-111.789 2457.06,-97.8609 2484.94,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="2387.53,-120.544 2383.4,-123.858 2388.7,-123.844 2387.53,-120.544" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node28 --><g class="edge inheritance" id="graph728_34_28"><a xlink:title="ReuseAddress is a subtype of SocketOption"><path d="M2406.39,-124.521C2460.35,-113.731 2540.56,-97.6881 2593.79,-87.0421" stroke="#d4d4d4" fill="none"></path><polygon points="2405.82,-122.852 2401.26,-125.549 2406.5,-126.284 2405.82,-122.852" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node29 --><g class="edge inheritance" id="graph728_34_29"><a xlink:title="ReceiveBufferSize is a subtype of SocketOption"><path d="M2406.29,-129.057C2478.07,-120.218 2604.8,-104.146 2713,-88 2715.88,-87.5698 2718.83,-87.1201 2721.8,-86.6578" stroke="#d4d4d4" fill="none"></path><polygon points="2405.97,-127.334 2401.22,-129.681 2406.39,-130.807 2405.97,-127.334" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node30 --><g class="edge inheritance" id="graph728_34_30"><a xlink:title="PerformancePreferences is a subtype of SocketOption"><path d="M2406.61,-131.366C2500.89,-123.6 2693.99,-106.935 2857,-88 2860.18,-87.6306 2863.42,-87.241 2866.7,-86.8371" stroke="#d4d4d4" fill="none"></path><polygon points="2406.21,-129.643 2401.37,-131.797 2406.49,-133.131 2406.21,-129.643" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node31 --><g class="edge inheritance" id="graph728_34_31"><a xlink:title="OOBInline is a subtype of SocketOption"><path d="M2291.92,-131.835C2206.84,-125.18 2041.87,-110.555 1903,-88 1899.82,-87.4829 1896.54,-86.8998 1893.25,-86.2762" stroke="#d4d4d4" fill="none"></path><polygon points="2291.79,-133.58 2296.91,-132.223 2292.06,-130.09 2291.79,-133.58" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node34&#45;&gt;node32 --><g class="edge inheritance" id="graph728_34_32"><a xlink:title="KeepAlive is a subtype of SocketOption"><path d="M2291.64,-129.263C2224.04,-121.006 2108.47,-105.884 2010,-88 2006.88,-87.4337 2003.67,-86.8139 2000.44,-86.164" stroke="#d4d4d4" fill="none"></path><polygon points="2291.64,-131.027 2296.82,-129.895 2292.07,-127.553 2291.64,-131.027" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node35 --><g class="node class" id="graph728_35"><a xlink:title="akka.actor.IO.ServerHandle" xlink:href="IO$$ServerHandle.html#inheritance-diagram"><polygon points="3243.25,-88 3138.75,-88 3138.75,-62 3243.25,-62 3243.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="3149" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="3171" text-anchor="start">ServerHandle</text></a></g><!-- node36 --><g class="node class" id="graph728_36"><a xlink:title="akka.actor.IO.SocketHandle" xlink:href="IO$$SocketHandle.html#inheritance-diagram"><polygon points="3423.25,-26 3316.75,-26 3316.75,-0 3423.25,-0 3423.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="3327" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="3349" text-anchor="start">SocketHandle</text></a></g><!-- node37 --><g class="node trait" id="graph728_37"><a xlink:title="akka.actor.IO.WriteHandle" xlink:href="IO$$WriteHandle.html#inheritance-diagram"><polygon points="3360.25,-88 3261.75,-88 3261.75,-62 3360.25,-62 3360.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-83" x="3272" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="3294" text-anchor="start">WriteHandle</text></a></g><!-- node37&#45;&gt;node36 --><g class="edge inheritance" id="graph728_37_36"><a xlink:title="SocketHandle is a subtype of WriteHandle"><path d="M3326.45,-58.2924C3336.33,-48.2386 3348.97,-35.3904 3358.08,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="3325.2,-57.066 3322.94,-61.8581 3327.69,-59.52 3325.2,-57.066" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node38 --><g class="node trait" id="graph728_38"><a xlink:title="akka.actor.IO.ReadHandle" xlink:href="IO$$ReadHandle.html#inheritance-diagram"><polygon points="3479,-88 3379,-88 3379,-62 3479,-62 3479,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-83" x="3389" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="3411" text-anchor="start">ReadHandle</text></a></g><!-- node38&#45;&gt;node36 --><g class="edge inheritance" id="graph728_38_36"><a xlink:title="SocketHandle is a subtype of ReadHandle"><path d="M3413.55,-58.2924C3403.67,-48.2386 3391.03,-35.3904 3381.92,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="3412.31,-59.52 3417.06,-61.8581 3414.8,-57.066 3412.31,-59.52" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node39 --><g class="node trait" id="graph728_39"><a xlink:title="akka.actor.IO.Handle" xlink:href="IO$$Handle.html#inheritance-diagram"><polygon points="3349,-150 3273,-150 3273,-124 3349,-124 3349,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="3283" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="3305" text-anchor="start">Handle</text></a></g><!-- node39&#45;&gt;node35 --><g class="edge inheritance" id="graph728_39_35"><a xlink:title="ServerHandle is a subtype of Handle"><path d="M3282.2,-121.599C3261.75,-111.373 3234.59,-97.7968 3215.25,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="3281.46,-123.187 3286.72,-123.858 3283.03,-120.057 3281.46,-123.187" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node39&#45;&gt;node37 --><g class="edge inheritance" id="graph728_39_37"><a xlink:title="WriteHandle is a subtype of Handle"><path d="M3311,-118.683C3311,-108.896 3311,-96.9026 3311,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="3309.25,-118.858 3311,-123.858 3312.75,-118.858 3309.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node39&#45;&gt;node38 --><g class="edge inheritance" id="graph728_39_38"><a xlink:title="ReadHandle is a subtype of Handle"><path d="M3339.58,-121.469C3359.66,-111.259 3386.21,-97.7561 3405.16,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="3338.54,-120.032 3334.88,-123.858 3340.13,-123.152 3338.54,-120.032" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="akka.actor.IO"><span>IO</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.actor.IO.Accept" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AcceptextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Accept:Accept"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Accept.html"><span class="name">Accept</span></a><span class="params">(<span name="socket">socket: <a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">SocketHandle</a></span>, <span name="server">server: <a href="IO$$ServerHandle.html" class="extype" name="akka.actor.IO.ServerHandle">ServerHandle</a></span>, <span name="options">options: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a>] = <span class="symbol">immutable.this.Nil</span></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message to an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> to accept a new connection with the
+given <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a>s.</p>
+    </li><li name="akka.actor.IO.Backlog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BacklogextendsIO.ServerSocketOptionwithProductwithSerializable"></a>
+      <a id="Backlog:Backlog"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Backlog.html"><span class="name">Backlog</span></a><span class="params">(<span name="numberOfConnections">numberOfConnections: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">ServerSocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">akka.actor.IO.ServerSocketOption</a> to set the maximum backlog of connections.</p>
+    </li><li name="akka.actor.IO.Chunk" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ChunkextendsIO.InputwithProductwithSerializable"></a>
+      <a id="Chunk:Chunk"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Chunk.html"><span class="name">Chunk</span></a><span class="params">(<span name="bytes">bytes: <a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a></span>)</span><span class="result"> extends <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Part of an <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">akka.actor.IO.Input</a> stream that contains a chunk of bytes.</p>
+    </li><li name="akka.actor.IO.Close" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CloseextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Close:Close"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Close.html"><span class="name">Close</span></a><span class="params">(<span name="handle">handle: <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">Handle</a></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message to an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> to close the Channel.</p>
+    </li><li name="akka.actor.IO.Closed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClosedextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Closed:Closed"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Closed.html"><span class="name">Closed</span></a><span class="params">(<span name="handle">handle: <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">Handle</a></span>, <span name="cause">cause: <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message from an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> that the Channel has closed.</p>
+    </li><li name="akka.actor.IO.Connect" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConnectextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Connect:Connect"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Connect.html"><span class="name">Connect</span></a><span class="params">(<span name="socket">socket: <a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">SocketHandle</a></span>, <span name="address">address: <span class="extype" name="java.net.SocketAddress">SocketAddress</span></span>, <span name="options">options: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a>] = <span class="symbol">immutable.this.Nil</span></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message to an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> to create a SocketChannel connected
+to the provided address with the given <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a>s.</p>
+    </li><li name="akka.actor.IO.Connected" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConnectedextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Connected:Connected"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Connected.html"><span class="name">Connected</span></a><span class="params">(<span name="socket">socket: <a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">SocketHandle</a></span>, <span name="address">address: <span class="extype" name="java.net.SocketAddress">SocketAddress</span></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message from an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> that the SocketChannel has
+successfully connected.</p>
+    </li><li name="akka.actor.IO.DivergentIterateeException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DivergentIterateeExceptionextendsIllegalStateException"></a>
+      <a id="DivergentIterateeException:DivergentIterateeException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$DivergentIterateeException.html"><span class="name">DivergentIterateeException</span></a><span class="result"> extends <span class="extype" name="java.lang.IllegalStateException">IllegalStateException</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.actor.IO.Done" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Done[+A]extendsIO.Iteratee[A]withProductwithSerializable"></a>
+      <a id="Done[+A]:Done[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Done.html"><span class="name">Done</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="akka.actor.IO.Done.A">A</span></span>)</span><span class="result"> extends <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.Done.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An Iteratee representing a result, usually returned by the successful
+completion of an Iteratee.</p>
+    </li><li name="akka.actor.IO.Error" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ErrorextendsIO.InputwithProductwithSerializable"></a>
+      <a id="Error:Error"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Error.html"><span class="name">Error</span></a><span class="params">(<span name="cause">cause: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Part of an <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">akka.actor.IO.Input</a> stream that represents an error in the stream.</p>
+    </li><li name="akka.actor.IO.Failure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FailureextendsIO.Iteratee[Nothing]withProductwithSerializable"></a>
+      <a id="Failure:Failure"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Failure.html"><span class="name">Failure</span></a><span class="params">(<span name="cause">cause: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">akka.actor.IO.Iteratee</a> that represents an erronous end state.</p>
+    </li><li name="akka.actor.IO.Handle" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HandleextendsAnyRef"></a>
+      <a id="Handle:Handle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Handle.html"><span class="name">Handle</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An immutable handle to a Java NIO Channel.</p>
+    </li><li name="akka.actor.IO.IOMessage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IOMessageextendsAnyRef"></a>
+      <a id="IOMessage:IOMessage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$IOMessage.html"><span class="name">IOMessage</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Messages used to communicate with an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a>.</p>
+    </li><li name="akka.actor.IO.Input" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InputextendsAnyRef"></a>
+      <a id="Input:Input"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Input.html"><span class="name">Input</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents part of a stream of bytes that can be processed by an
+<a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">akka.actor.IO.Iteratee</a>.</p>
+    </li><li name="akka.actor.IO.Iteratee" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Iteratee[+A]extendsAnyRef"></a>
+      <a id="Iteratee[+A]:Iteratee[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Iteratee.html"><span class="name">Iteratee</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A basic Iteratee implementation of Oleg's Iteratee (http://okmij.</p>
+    </li><li name="akka.actor.IO.IterateeRef" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IterateeRef[A]extendsAnyRef"></a>
+      <a id="IterateeRef[A]:IterateeRef[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$IterateeRef.html"><span class="name">IterateeRef</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A mutable reference to an Iteratee designed for use within an Actor.</p>
+    </li><li name="akka.actor.IO.IterateeRefAsync" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterateeRefAsync[A]extendsIO.IterateeRef[A]"></a>
+      <a id="IterateeRefAsync[A]:IterateeRefAsync[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$IterateeRefAsync.html"><span class="name">IterateeRefAsync</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="IO$$IterateeRef.html" class="extype" name="akka.actor.IO.IterateeRef">IterateeRef</a>[<span class="extype" name="akka.actor.IO.IterateeRefAsync.A">A</span>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A mutable reference to an <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">akka.actor.IO.Iteratee</a>.</p>
+    </li><li name="akka.actor.IO.IterateeRefSync" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterateeRefSync[A]extendsIO.IterateeRef[A]"></a>
+      <a id="IterateeRefSync[A]:IterateeRefSync[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$IterateeRefSync.html"><span class="name">IterateeRefSync</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="IO$$IterateeRef.html" class="extype" name="akka.actor.IO.IterateeRef">IterateeRef</a>[<span class="extype" name="akka.actor.IO.IterateeRefSync.A">A</span>]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A mutable reference to an <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">akka.actor.IO.Iteratee</a>.</p>
+    </li><li name="akka.actor.IO.KeepAlive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="KeepAliveextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="KeepAlive:KeepAlive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$KeepAlive.html"><span class="name">KeepAlive</span></a><span class="params">(<span name="on">on: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to enable or disable SO_KEEPALIVE</p>
+    </li><li name="akka.actor.IO.Listen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ListenextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Listen:Listen"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Listen.html"><span class="name">Listen</span></a><span class="params">(<span name="server">server: <a href="IO$$ServerHandle.html" class="extype" name="akka.actor.IO.ServerHandle">ServerHandle</a></span>, <span name="address">address: <span class="extype" name="java.net.SocketAddress">SocketAddress</span></span>, <span name="options">options: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">ServerSocketOption</a>] = <span class="symbol">immutable.this.Nil</span></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message to an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> to create a ServerSocketChannel
+listening on the provided address with the given
+<a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">akka.actor.IO.ServerSocketOption</a>s.</p>
+    </li><li name="akka.actor.IO.Listening" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ListeningextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Listening:Listening"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Listening.html"><span class="name">Listening</span></a><span class="params">(<span name="server">server: <a href="IO$$ServerHandle.html" class="extype" name="akka.actor.IO.ServerHandle">ServerHandle</a></span>, <span name="address">address: <span class="extype" name="java.net.SocketAddress">SocketAddress</span></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message from an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> that the ServerSocketChannel is
+now listening for connections.</p>
+    </li><li name="akka.actor.IO.NewClient" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NewClientextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="NewClient:NewClient"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$NewClient.html"><span class="name">NewClient</span></a><span class="params">(<span name="server">server: <a href="IO$$ServerHandle.html" class="extype" name="akka.actor.IO.ServerHandle">ServerHandle</a></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message from an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> that a new connection has been
+made to the ServerSocketChannel and needs to be accepted.</p>
+    </li><li name="akka.actor.IO.Next" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Next[+A]extendsIO.Iteratee[A]withProductwithSerializable"></a>
+      <a id="Next[+A]:Next[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Next.html"><span class="name">Next</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="f">f: (<a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a>) ⇒ (<a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.Next.A">A</span>], <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a>)</span>)</span><span class="result"> extends <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.Next.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">An <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">akka.actor.IO.Iteratee</a> that still requires more input to calculate
+it's result.</p>
+    </li><li name="akka.actor.IO.OOBInline" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OOBInlineextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="OOBInline:OOBInline"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$OOBInline.html"><span class="name">OOBInline</span></a><span class="params">(<span name="on">on: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to enable or disable OOBINLINE (receipt
+of TCP urgent data) By default, this option is disabled and TCP urgent
+data received on a <a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a> is silently discarded.</p>
+    </li><li name="akka.actor.IO.PerformancePreferences" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PerformancePreferencesextendsIO.SocketOptionwithIO.ServerSocketOptionwithProductwithSerializable"></a>
+      <a id="PerformancePreferences:PerformancePreferences"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$PerformancePreferences.html"><span class="name">PerformancePreferences</span></a><span class="params">(<span name="connectionTime">connectionTime: <span class="extype" name="scala.Int">Int</span></span>, <span name="latency">latency: <span class="extype" name="scala.Int">Int</span></span>, <span name="bandwidth">bandwidth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">ServerSocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to set performance preferences for this
+<a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a>.</p>
+    </li><li name="akka.actor.IO.Read" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Read:Read"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Read.html"><span class="name">Read</span></a><span class="params">(<span name="handle">handle: <a href="IO$$ReadHandle.html" class="extype" name="akka.actor.IO.ReadHandle">ReadHandle</a></span>, <span name="bytes">bytes: <a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message from an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> that contains bytes read from
+the SocketChannel.</p>
+    </li><li name="akka.actor.IO.ReadHandle" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ReadHandleextendsIO.HandlewithProduct"></a>
+      <a id="ReadHandle:ReadHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$ReadHandle.html"><span class="name">ReadHandle</span></a><span class="result"> extends <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">Handle</a> with <span class="extype" name="scala.Product">Product</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">akka.actor.IO.Handle</a> to a ReadableByteChannel.</p>
+    </li><li name="akka.actor.IO.ReceiveBufferSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReceiveBufferSizeextendsIO.SocketOptionwithIO.ServerSocketOptionwithProductwithSerializable"></a>
+      <a id="ReceiveBufferSize:ReceiveBufferSize"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$ReceiveBufferSize.html"><span class="name">ReceiveBufferSize</span></a><span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">ServerSocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to set the SO_RCVBUF option for this
+<a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a>.</p>
+    </li><li name="akka.actor.IO.ReuseAddress" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReuseAddressextendsIO.SocketOptionwithIO.ServerSocketOptionwithProductwithSerializable"></a>
+      <a id="ReuseAddress:ReuseAddress"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$ReuseAddress.html"><span class="name">ReuseAddress</span></a><span class="params">(<span name="on">on: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <a href="IO$$ServerSocketOption.html" class="extype" name="akka.actor.IO.ServerSocketOption">ServerSocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to enable or disable SO_REUSEADDR</p>
+    </li><li name="akka.actor.IO.SendBufferSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SendBufferSizeextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="SendBufferSize:SendBufferSize"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$SendBufferSize.html"><span class="name">SendBufferSize</span></a><span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to set the SO_SNDBUF option for this
+<a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a>.</p>
+    </li><li name="akka.actor.IO.ServerHandle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ServerHandleextendsIO.HandlewithProductwithSerializable"></a>
+      <a id="ServerHandle:ServerHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$ServerHandle.html"><span class="name">ServerHandle</span></a><span class="params">(<span name="owner">owner: <a href="ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="ioManager">ioManager: <a href="ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="uuid">uuid: <span class="extype" name="java.util.UUID">UUID</span> = <span class="symbol">java.util.UUID.randomUUID()</span></span>)</span><span class="result"> extends <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">Handle</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">akka.actor.IO.Handle</a> to a ServerSocketChannel.</p>
+    </li><li name="akka.actor.IO.ServerSocketOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ServerSocketOptionextendsAnyRef"></a>
+      <a id="ServerSocketOption:ServerSocketOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$ServerSocketOption.html"><span class="name">ServerSocketOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Options to be set when setting up a <a href="IO$$ServerHandle.html" class="extype" name="akka.actor.IO.ServerHandle">akka.actor.IO.ServerHandle</a>
+</p>
+    </li><li name="akka.actor.IO.SoLinger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SoLingerextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="SoLinger:SoLinger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$SoLinger.html"><span class="name">SoLinger</span></a><span class="params">(<span name="linger">linger: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to enable or disable SO_LINGER with the
+specified linger time in seconds.</p>
+    </li><li name="akka.actor.IO.SoTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SoTimeoutextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="SoTimeout:SoTimeout"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$SoTimeout.html"><span class="name">SoTimeout</span></a><span class="params">(<span name="timeout">timeout: <span class="extype" name="scala.concurrent.duration.Duration">Duration</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to set SO_TIMEOUT to the specified
+timeout rounded down to the nearest millisecond.</p>
+    </li><li name="akka.actor.IO.SocketHandle" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SocketHandleextendsIO.ReadHandlewithIO.WriteHandlewithProductwithSerializable"></a>
+      <a id="SocketHandle:SocketHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$SocketHandle.html"><span class="name">SocketHandle</span></a><span class="params">(<span name="owner">owner: <a href="ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="ioManager">ioManager: <a href="ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="uuid">uuid: <span class="extype" name="java.util.UUID">UUID</span> = <span class="symbol">java.util.UUID.randomUUID()</span></span>)</span><span class="result"> extends <a href="IO$$ReadHandle.html" class="extype" name="akka.actor.IO.ReadHandle">ReadHandle</a> with <a href="IO$$WriteHandle.html" class="extype" name="akka.actor.IO.WriteHandle">WriteHandle</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">akka.actor.IO.Handle</a> to a SocketChannel.</p>
+    </li><li name="akka.actor.IO.SocketOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SocketOptionextendsAnyRef"></a>
+      <a id="SocketOption:SocketOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$SocketOption.html"><span class="name">SocketOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Options to be set when setting up a <a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a>
+</p>
+    </li><li name="akka.actor.IO.TcpNoDelay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TcpNoDelayextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="TcpNoDelay:TcpNoDelay"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$TcpNoDelay.html"><span class="name">TcpNoDelay</span></a><span class="params">(<span name="on">on: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to enable or disable TCP_NODELAY
+(disable or enable Nagle's algorithm)</p>
+    </li><li name="akka.actor.IO.TrafficClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TrafficClassextendsIO.SocketOptionwithProductwithSerializable"></a>
+      <a id="TrafficClass:TrafficClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$TrafficClass.html"><span class="name">TrafficClass</span></a><span class="params">(<span name="tc">tc: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">SocketOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="IO$$SocketOption.html" class="extype" name="akka.actor.IO.SocketOption">akka.actor.IO.SocketOption</a> to set the traffic class or
+type-of-service octet in the IP header for packets sent from this
+<a href="IO$$SocketHandle.html" class="extype" name="akka.actor.IO.SocketHandle">akka.actor.IO.SocketHandle</a>.</p>
+    </li><li name="akka.actor.IO.Write" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WriteextendsIO.IOMessagewithProductwithSerializable"></a>
+      <a id="Write:Write"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Write.html"><span class="name">Write</span></a><span class="params">(<span name="handle">handle: <a href="IO$$WriteHandle.html" class="extype" name="akka.actor.IO.WriteHandle">WriteHandle</a></span>, <span name="bytes">bytes: <a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a></span>)</span><span class="result"> extends <a href="IO$$IOMessage.html" class="extype" name="akka.actor.IO.IOMessage">IOMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message to an <a href="IOManager.html" class="extype" name="akka.actor.IOManager">akka.actor.IOManager</a> to write to the SocketChannel.</p>
+    </li><li name="akka.actor.IO.WriteHandle" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WriteHandleextendsIO.HandlewithProduct"></a>
+      <a id="WriteHandle:WriteHandle"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$WriteHandle.html"><span class="name">WriteHandle</span></a><span class="result"> extends <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">Handle</a> with <span class="extype" name="scala.Product">Product</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a href="IO$$Handle.html" class="extype" name="akka.actor.IO.Handle">akka.actor.IO.Handle</a> to a WritableByteChannel.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="akka.actor.IO.Chunk" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Chunk"></a>
+      <a id="Chunk:Chunk"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Chunk$.html"><span class="name">Chunk</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.actor.IO.EOF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EOF"></a>
+      <a id="EOF:EOF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$EOF$.html"><span class="name">EOF</span></a><span class="result"> extends <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">Input</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Part of an <a href="IO$$Input.html" class="extype" name="akka.actor.IO.Input">akka.actor.IO.Input</a> stream that represents the end of the
+stream.</p>
+    </li><li name="akka.actor.IO.Iteratee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Iteratee"></a>
+      <a id="Iteratee:Iteratee"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$Iteratee$.html"><span class="name">Iteratee</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="akka.actor.IO.IterateeRef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IterateeRef"></a>
+      <a id="IterateeRef:IterateeRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IO$$IterateeRef$.html"><span class="name">IterateeRef</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.IO#drop" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="drop(length:Int):akka.actor.IO.Iteratee[Unit]"></a>
+      <a id="drop(Int):Iteratee[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">drop</span><span class="params">(<span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that ignores the specified number of bytes.</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.IO#fold" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fold[A,B,M[A]&lt;:Traversable[A]](initial:B,in:M[A])(f:(B,A)=&gt;akka.actor.IO.Iteratee[B]):akka.actor.IO.Iteratee[B]"></a>
+      <a id="fold[A,B,M[A]&lt;:Traversable[A]](B,M[A])((B,A)⇒Iteratee[B]):Iteratee[B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fold</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="M">M<span class="tparams">[<span name="A">A</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="akka.actor.IO.fold.M.A">A</span>]</span>]</span><span class="params">(<span name="initial">initial: <span class="extype" name="akka.actor.IO.fold.B">B</span></span>, <span name="in">in: <span class="extype" name="akka.actor.IO.fold.M">M</span>[<span class="extype" name="akka.actor.IO.fold.A">A</span>]</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="akka.actor.IO.fold.B">B</span>, <span class="extype" name="akka.actor.IO.fold.A">A</span>) ⇒ <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.fold.B">B</span>]</span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.fold.B">B</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that folds over a Traversable by applying a function that
+returns an Iteratee.</p>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="akka.actor.IO#peek" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="peek(length:Int):akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="peek(Int):Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">peek</span><span class="params">(<span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that returns a <a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">akka.util.ByteString</a> of the request length,
+but does not consume the Input.</p>
+    </li><li name="akka.actor.IO#repeat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="repeat[T](iter:akka.actor.IO.Iteratee[T]):akka.actor.IO.Iteratee[T]"></a>
+      <a id="repeat[T](Iteratee[T]):Iteratee[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">repeat</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="iter">iter: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.repeat.T">T</span>]</span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.repeat.T">T</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that continually repeats an Iteratee.</p>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="akka.actor.IO#take" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="take(length:Int):akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="take(Int):Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">take</span><span class="params">(<span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that returns a ByteString of the requested length.</p>
+    </li><li name="akka.actor.IO#takeAll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="takeAll:akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="takeAll:Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takeAll</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that returns the remaining ByteString until an EOF is given.</p>
+    </li><li name="akka.actor.IO#takeAny" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="takeAny:akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="takeAny:Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takeAny</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that returns any input it receives
+</p>
+    </li><li name="akka.actor.IO#takeList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="takeList[A](length:Int)(iter:akka.actor.IO.Iteratee[A]):akka.actor.IO.Iteratee[List[A]]"></a>
+      <a id="takeList[A](Int)(Iteratee[A]):Iteratee[List[A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takeList</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="iter">iter: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.takeList.A">A</span>]</span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="akka.actor.IO.takeList.A">A</span>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that creates a list made up of the results of an Iteratee.</p>
+    </li><li name="akka.actor.IO#takeUntil" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="takeUntil(delimiter:akka.util.ByteString,inclusive:Boolean):akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="takeUntil(ByteString,Boolean):Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takeUntil</span><span class="params">(<span name="delimiter">delimiter: <a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a></span>, <span name="inclusive">inclusive: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that returns the ByteString prefix up until the supplied delimiter.</p><div class="fullcomment"><div class="comment cmt"><p>An Iteratee that returns the ByteString prefix up until the supplied delimiter.
+The delimiter is dropped by default, but it can be returned with the result by
+setting 'inclusive' to be 'true'.
+</p></div></div>
+    </li><li name="akka.actor.IO#takeWhile" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="takeWhile(p:Byte=&gt;Boolean):akka.actor.IO.Iteratee[akka.util.ByteString]"></a>
+      <a id="takeWhile((Byte)⇒Boolean):Iteratee[ByteString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">takeWhile</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Byte">Byte</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<a href="../util/ByteString.html" class="extype" name="akka.util.ByteString">ByteString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that will collect bytes as long as a predicate is true.</p>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="akka.actor.IO#traverse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="traverse[A,B,M[A]&lt;:Traversable[A]](in:M[A])(f:A=&gt;akka.actor.IO.Iteratee[B])(implicitcbf:scala.collection.generic.CanBuildFrom[M[A],B,M[B]]):akka.actor.IO.Iteratee[M[B]]"></a>
+      <a id="traverse[A,B,M[A]&lt;:Traversable[A]](M[A])((A)⇒Iteratee[B])(CanBuildFrom[M[A],B,M[B]]):Iteratee[M[B]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">traverse</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="M">M<span class="tparams">[<span name="A">A</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="akka.actor.IO.traverse.M.A">A</span>]</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="akka.actor.IO.traverse.M">M</span>[<span class="extype" name="akka.actor.IO.traverse.A">A</span>]</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="akka.actor.IO.traverse.A">A</span>) ⇒ <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.traverse.B">B</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="cbf">cbf: <span class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</span>[<span class="extype" name="akka.actor.IO.traverse.M">M</span>[<span class="extype" name="akka.actor.IO.traverse.A">A</span>], <span class="extype" name="akka.actor.IO.traverse.B">B</span>, <span class="extype" name="akka.actor.IO.traverse.M">M</span>[<span class="extype" name="akka.actor.IO.traverse.B">B</span>]]</span>)</span><span class="result">: <a href="IO$$Iteratee.html" class="extype" name="akka.actor.IO.Iteratee">Iteratee</a>[<span class="extype" name="akka.actor.IO.traverse.M">M</span>[<span class="extype" name="akka.actor.IO.traverse.B">B</span>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">An Iteratee that applies an Iteratee to each element of a Traversable
+and finally returning a single Iteratee containing a Traversable of the results.</p>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+    </body>
+      </html>

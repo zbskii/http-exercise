@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>routing - akka.cluster.routing</title>
+          <meta name="description" content="routing - akka.cluster.routing" />
+          <meta name="keywords" content="routing akka.cluster.routing" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'akka.cluster.routing.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="akka">akka</a>.<a href="../package.html" class="extype" name="akka.cluster">cluster</a></p>
+        <h1>routing</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">routing</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph112" viewBox="0.00 0.00 690.00 220.00" height="220pt" width="690pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 216)" class="graph" id="graph1"><polygon points="-4,5 -4,-216 687,-216 687,5 -4,5" stroke="white" fill="white"></polygon><!-- node0 --><g class="node object" id="graph112_0"><a xlink:title="akka.cluster.routing.SystemLoadAverageMetricsSelector" xlink:href="SystemLoadAverageMetricsSelector$.html#inheritance-diagram"><polygon points="206,-88 0,-88 0,-62 206,-62 206,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-83" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="32" text-anchor="start">SystemLoadAverageMetricsSelector</text></a></g><!-- node1 --><g class="node class" id="graph112_1"><a xlink:title="akka.cluster.routing.MixMetricsSelectorBase" xlink:href="MixMetricsSelectorBase.html#inheritance-diagram"><polygon points="376,-88 224,-88 224,-62 376,-62 376,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-83" x="234" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="256" text-anchor="start">MixMetricsSelectorBase</text></a></g><!-- node2 --><g class="node object" id="graph112_2"><a xlink:title="akka.cluster.routing.MixMetricsSelector" xlink:href="MixMetricsSelector$.html#inheritance-diagram"><polygon points="291.25,-26 162.75,-26 162.75,-0 291.25,-0 291.25,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-21" x="173" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="195" text-anchor="start">MixMetricsSelector</text></a></g><!-- node1&#45;&gt;node2 --><g class="edge inheritance" id="graph112_1_2"><a xlink:title="MixMetricsSelector is a subtype of MixMetricsSelectorBase"><path d="M281.21,-58.5563C268.932,-48.4643 253.124,-35.4716 241.751,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="280.253,-60.0352 285.227,-61.8581 282.476,-57.3313 280.253,-60.0352" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph112_3"><a xlink:title="akka.cluster.routing.MixMetricsSelector" xlink:href="MixMetricsSelector.html#inheritance-diagram"><polygon points="438.25,-26 309.75,-26 309.75,-0 438.25,-0 438.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="320" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="342" text-anchor="start">MixMetricsSelector</text></a></g><!-- node1&#45;&gt;node3 --><g class="edge inheritance" id="graph112_1_3"><a xlink:title="MixMetricsSelector is a subtype of MixMetricsSelectorBase"><path d="M319.047,-58.5563C331.494,-48.4643 347.518,-35.4716 359.047,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="317.757,-57.3497 314.975,-61.8581 319.961,-60.0684 317.757,-57.3497" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node trait" id="graph112_4"><a xlink:title="akka.cluster.routing.MetricsSelector" xlink:href="MetricsSelector.html#inheritance-diagram"><polygon points="437.25,-212 324.75,-212 324.75,-186 437.25,-186 437.25,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-207" x="335" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-195" x="357" text-anchor="start">MetricsSelector</text></a></g><!-- node7 --><g class="node class" id="graph112_7"><a xlink:title="akka.cluster.routing.CapacityMetricsSelector" xlink:href="CapacityMetricsSelector.html#inheritance-diagram"><polygon points="457,-150 305,-150 305,-124 457,-124 457,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-145" x="315" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="337" text-anchor="start">CapacityMetricsSelector</text></a></g><!-- node4&#45;&gt;node7 --><g class="edge inheritance" id="graph112_4_7"><a xlink:title="CapacityMetricsSelector is a subtype of MetricsSelector"><path d="M381,-180.683C381,-170.896 381,-158.903 381,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="379.25,-180.858 381,-185.858 382.75,-180.858 379.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node object" id="graph112_5"><a xlink:title="akka.cluster.routing.HeapMetricsSelector" xlink:href="HeapMetricsSelector$.html#inheritance-diagram"><polygon points="531.25,-88 394.75,-88 394.75,-62 531.25,-62 531.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-83" x="405" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="427" text-anchor="start">HeapMetricsSelector</text></a></g><!-- node6 --><g class="node object" id="graph112_6"><a xlink:title="akka.cluster.routing.CpuMetricsSelector" xlink:href="CpuMetricsSelector$.html#inheritance-diagram"><polygon points="682,-88 550,-88 550,-62 682,-62 682,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-83" x="560" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="582" text-anchor="start">CpuMetricsSelector</text></a></g><!-- node7&#45;&gt;node0 --><g class="edge inheritance" id="graph112_7_0"><a xlink:title="SystemLoadAverageMetricsSelector is a subtype of CapacityMetricsSelector"><path d="M319.9,-122.813C271.853,-112.443 205.468,-98.1154 158.834,-88.0504" stroke="#d4d4d4" fill="none"></path><polygon points="319.82,-124.586 325.077,-123.93 320.559,-121.165 319.82,-124.586" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7&#45;&gt;node1 --><g class="edge inheritance" id="graph112_7_1"><a xlink:title="MixMetricsSelectorBase is a subtype of CapacityMetricsSelector"><path d="M360.505,-120.819C346.832,-110.691 329.096,-97.5529 316.367,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="359.549,-122.288 364.608,-123.858 361.632,-119.476 359.549,-122.288" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7&#45;&gt;node5 --><g class="edge inheritance" id="graph112_7_5"><a xlink:title="HeapMetricsSelector is a subtype of CapacityMetricsSelector"><path d="M401.748,-120.819C415.59,-110.691 433.544,-97.5529 446.431,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="400.596,-119.493 397.594,-123.858 402.663,-122.318 400.596,-119.493" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7&#45;&gt;node6 --><g class="edge inheritance" id="graph112_7_6"><a xlink:title="CpuMetricsSelector is a subtype of CapacityMetricsSelector"><path d="M433.143,-122.687C473.718,-112.327 529.541,-98.0746 568.802,-88.0504" stroke="#d4d4d4" fill="none"></path><polygon points="432.685,-120.998 428.273,-123.93 433.551,-124.389 432.685,-120.998" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node trait" id="graph112_8"><a xlink:title="akka.cluster.routing.AdaptiveLoadBalancingRouterLike" xlink:href="AdaptiveLoadBalancingRouterLike.html#inheritance-diagram"><polygon points="664,-212 466,-212 466,-186 664,-186 664,-212" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-207" x="476" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-195" x="498" text-anchor="start">AdaptiveLoadBalancingRouterLike</text></a></g><!-- node9 --><g class="node class" id="graph112_9"><a xlink:title="akka.cluster.routing.AdaptiveLoadBalancingRouter" xlink:href="AdaptiveLoadBalancingRouter.html#inheritance-diagram"><polygon points="654.25,-150 475.75,-150 475.75,-124 654.25,-124 654.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-145" x="486" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="508" text-anchor="start">AdaptiveLoadBalancingRouter</text></a></g><!-- node8&#45;&gt;node9 --><g class="edge inheritance" id="graph112_8_9"><a xlink:title="AdaptiveLoadBalancingRouter is a subtype of AdaptiveLoadBalancingRouterLike"><path d="M565,-180.683C565,-170.896 565,-158.903 565,-150.124" stroke="#d4d4d4" fill="none"></path><polygon points="563.25,-180.858 565,-185.858 566.75,-180.858 563.25,-180.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.cluster.routing.AdaptiveLoadBalancingRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AdaptiveLoadBalancingRouterextendsRouterConfigwithAdaptiveLoadBalancingRouterLikewithOverrideUnsetConfig[akka.cluster.routing.AdaptiveLoadBalancingRouter]withProductwithSerializable"></a>
+      <a id="AdaptiveLoadBalancingRouter:AdaptiveLoadBalancingRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AdaptiveLoadBalancingRouter.html"><span class="name">AdaptiveLoadBalancingRouter</span></a><span class="params">(<span name="metricsSelector">metricsSelector: <a href="MetricsSelector.html" class="extype" name="akka.cluster.routing.MetricsSelector">MetricsSelector</a> = <span class="symbol">MixMetricsSelector</span></span>, <span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="../../routing/Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="defval" name="AdaptiveLoadBalancingRouter.escalateStrategy">...</span></span>)</span><span class="result"> extends <a href="../../routing/RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="AdaptiveLoadBalancingRouterLike.html" class="extype" name="akka.cluster.routing.AdaptiveLoadBalancingRouterLike">AdaptiveLoadBalancingRouterLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="AdaptiveLoadBalancingRouter.html" class="extype" name="akka.cluster.routing.AdaptiveLoadBalancingRouter">AdaptiveLoadBalancingRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that performs load balancing of messages to cluster nodes based on
+cluster metric data.</p>
+    </li><li name="akka.cluster.routing.AdaptiveLoadBalancingRouterLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AdaptiveLoadBalancingRouterLikeextendsAnyRef"></a>
+      <a id="AdaptiveLoadBalancingRouterLike:AdaptiveLoadBalancingRouterLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AdaptiveLoadBalancingRouterLike.html"><span class="name">AdaptiveLoadBalancingRouterLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">INTERNAL API.</p>
+    </li><li name="akka.cluster.routing.CapacityMetricsSelector" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CapacityMetricsSelectorextendsMetricsSelector"></a>
+      <a id="CapacityMetricsSelector:CapacityMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CapacityMetricsSelector.html"><span class="name">CapacityMetricsSelector</span></a><span class="result"> extends <a href="MetricsSelector.html" class="extype" name="akka.cluster.routing.MetricsSelector">MetricsSelector</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A MetricsSelector producing weights from remaining capacity.</p>
+    </li><li name="akka.cluster.routing.ClusterRouterConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClusterRouterConfigextendsRouterConfigwithProductwithSerializable"></a>
+      <a id="ClusterRouterConfig:ClusterRouterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClusterRouterConfig.html"><span class="name">ClusterRouterConfig</span></a><span class="params">(<span name="local">local: <a href="../../routing/RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a></span>, <span name="settings">settings: <a href="ClusterRouterSettings.html" class="extype" name="akka.cluster.routing.ClusterRouterSettings">ClusterRouterSettings</a></span>)</span><span class="result"> extends <a href="../../routing/RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><a href="../../routing/RouterConfig.html" class="extype" name="akka.routing.RouterConfig">akka.routing.RouterConfig</a> implementation for deployment on cluster nodes.</p>
+    </li><li name="akka.cluster.routing.ClusterRouterSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClusterRouterSettingsextendsProductwithSerializable"></a>
+      <a id="ClusterRouterSettings:ClusterRouterSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClusterRouterSettings.html"><span class="name">ClusterRouterSettings</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"><code>totalInstances</code> of cluster router must be &gt; 0
+<code>maxInstancesPerNode</code> of cluster router must be &gt; 0
+<code>maxInstancesPerNode</code> of cluster router must be 1 when routeesPath is defined
+</p>
+    </li><li name="akka.cluster.routing.MetricsSelector" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MetricsSelectorextendsSerializable"></a>
+      <a id="MetricsSelector:MetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MetricsSelector.html"><span class="name">MetricsSelector</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A MetricsSelector is responsible for producing weights from the node metrics.</p>
+    </li><li name="akka.cluster.routing.MixMetricsSelector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MixMetricsSelectorextendsMixMetricsSelectorBasewithProductwithSerializable"></a>
+      <a id="MixMetricsSelector:MixMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MixMetricsSelector.html"><span class="name">MixMetricsSelector</span></a><span class="params">(<span name="selectors">selectors: <span class="extype" name="scala.collection.immutable.IndexedSeq">IndexedSeq</span>[<a href="CapacityMetricsSelector.html" class="extype" name="akka.cluster.routing.CapacityMetricsSelector">CapacityMetricsSelector</a>]</span>)</span><span class="result"> extends <a href="MixMetricsSelectorBase.html" class="extype" name="akka.cluster.routing.MixMetricsSelectorBase">MixMetricsSelectorBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">MetricsSelector that combines other selectors and aggregates their capacity
+values.</p>
+    </li><li name="akka.cluster.routing.MixMetricsSelectorBase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MixMetricsSelectorBaseextendsCapacityMetricsSelector"></a>
+      <a id="MixMetricsSelectorBase:MixMetricsSelectorBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MixMetricsSelectorBase.html"><span class="name">MixMetricsSelectorBase</span></a><span class="result"> extends <a href="CapacityMetricsSelector.html" class="extype" name="akka.cluster.routing.CapacityMetricsSelector">CapacityMetricsSelector</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base class for MetricsSelector that combines other selectors and aggregates their capacity.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.cluster.routing.AdaptiveLoadBalancingRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AdaptiveLoadBalancingRouter"></a>
+      <a id="AdaptiveLoadBalancingRouter:AdaptiveLoadBalancingRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AdaptiveLoadBalancingRouter$.html"><span class="name">AdaptiveLoadBalancingRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.cluster.routing.ClusterRouterSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClusterRouterSettings"></a>
+      <a id="ClusterRouterSettings:ClusterRouterSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ClusterRouterSettings$.html"><span class="name">ClusterRouterSettings</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.cluster.routing.CpuMetricsSelector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CpuMetricsSelector"></a>
+      <a id="CpuMetricsSelector:CpuMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CpuMetricsSelector$.html"><span class="name">CpuMetricsSelector</span></a><span class="result"> extends <a href="CapacityMetricsSelector.html" class="extype" name="akka.cluster.routing.CapacityMetricsSelector">CapacityMetricsSelector</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">MetricsSelector that uses the combined CPU metrics.</p>
+    </li><li name="akka.cluster.routing.HeapMetricsSelector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HeapMetricsSelector"></a>
+      <a id="HeapMetricsSelector:HeapMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="HeapMetricsSelector$.html"><span class="name">HeapMetricsSelector</span></a><span class="result"> extends <a href="CapacityMetricsSelector.html" class="extype" name="akka.cluster.routing.CapacityMetricsSelector">CapacityMetricsSelector</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">MetricsSelector that uses the heap metrics.</p>
+    </li><li name="akka.cluster.routing.MixMetricsSelector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MixMetricsSelector"></a>
+      <a id="MixMetricsSelector:MixMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MixMetricsSelector$.html"><span class="name">MixMetricsSelector</span></a><span class="result"> extends <a href="MixMetricsSelectorBase.html" class="extype" name="akka.cluster.routing.MixMetricsSelectorBase">MixMetricsSelectorBase</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Singleton instance of the default MixMetricsSelector, which uses [akka.</p>
+    </li><li name="akka.cluster.routing.SystemLoadAverageMetricsSelector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SystemLoadAverageMetricsSelector"></a>
+      <a id="SystemLoadAverageMetricsSelector:SystemLoadAverageMetricsSelector"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SystemLoadAverageMetricsSelector$.html"><span class="name">SystemLoadAverageMetricsSelector</span></a><span class="result"> extends <a href="CapacityMetricsSelector.html" class="extype" name="akka.cluster.routing.CapacityMetricsSelector">CapacityMetricsSelector</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">MetricsSelector that uses the system load average metrics.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../../lib/diagrams.js"></script>
+    </body>
+      </html>

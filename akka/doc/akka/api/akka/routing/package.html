@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>routing - akka.routing</title>
+          <meta name="description" content="routing - akka.routing" />
+          <meta name="keywords" content="routing akka.routing" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'akka.routing.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="akka">akka</a></p>
+        <h1>routing</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">routing</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block diagram-container" id="content-diagram-container">
+                <span class="toggle diagram-link">Content Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="content-diagram"><svg class="package-diagram" id="graph373" viewBox="0.00 0.00 2029.00 158.00" height="158pt" width="2029pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 2026,-154 2026,5 -4,5" stroke="white" fill="white"></polygon><!-- node0 --><g class="node class" id="graph373_0"><a xlink:title="akka.routing.WithListeners" xlink:href="WithListeners.html#inheritance-diagram"><polygon points="104.25,-88 -0.25,-88 -0.25,-62 104.25,-62 104.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="32" text-anchor="start">WithListeners</text></a></g><!-- node1 --><g class="node class" id="graph373_1"><a xlink:title="akka.routing.SmallestMailboxRouter" xlink:href="SmallestMailboxRouter.html#inheritance-diagram"><polygon points="453.25,-88 306.75,-88 306.75,-62 453.25,-62 453.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="317" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="339" text-anchor="start">SmallestMailboxRouter</text></a></g><!-- node2 --><g class="node trait" id="graph373_2"><a xlink:title="akka.routing.SmallestMailboxLike" xlink:href="SmallestMailboxLike.html#inheritance-diagram"><polygon points="447.25,-150 312.75,-150 312.75,-124 447.25,-124 447.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="323" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="345" text-anchor="start">SmallestMailboxLike</text></a></g><!-- node2&#45;&gt;node1 --><g class="edge inheritance" id="graph373_2_1"><a xlink:title="SmallestMailboxRouter is a subtype of SmallestMailboxLike"><path d="M380,-118.683C380,-108.896 380,-96.9026 380,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="378.25,-118.858 380,-123.858 381.75,-118.858 378.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph373_3"><a xlink:title="akka.routing.ScatterGatherFirstCompletedRouter" xlink:href="ScatterGatherFirstCompletedRouter.html#inheritance-diagram"><polygon points="676,-88 472,-88 472,-62 676,-62 676,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="482" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="504" text-anchor="start">ScatterGatherFirstCompletedRouter</text></a></g><!-- node4 --><g class="node trait" id="graph373_4"><a xlink:title="akka.routing.ScatterGatherFirstCompletedLike" xlink:href="ScatterGatherFirstCompletedLike.html#inheritance-diagram"><polygon points="670.25,-150 477.75,-150 477.75,-124 670.25,-124 670.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="488" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="510" text-anchor="start">ScatterGatherFirstCompletedLike</text></a></g><!-- node4&#45;&gt;node3 --><g class="edge inheritance" id="graph373_4_3"><a xlink:title="ScatterGatherFirstCompletedRouter is a subtype of ScatterGatherFirstCompletedLike"><path d="M574,-118.683C574,-108.896 574,-96.9026 574,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="572.25,-118.858 574,-123.858 575.75,-118.858 572.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node trait" id="graph373_5"><a xlink:title="akka.routing.RouterEnvelope" xlink:href="RouterEnvelope.html#inheritance-diagram"><polygon points="1773,-150 1657,-150 1657,-124 1773,-124 1773,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="1667" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1689" text-anchor="start">RouterEnvelope</text></a></g><!-- node27 --><g class="node class" id="graph373_27"><a xlink:title="akka.routing.Broadcast" xlink:href="Broadcast.html#inheritance-diagram"><polygon points="1759.25,-88 1670.75,-88 1670.75,-62 1759.25,-62 1759.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1681" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1703" text-anchor="start">Broadcast</text></a></g><!-- node5&#45;&gt;node27 --><g class="edge inheritance" id="graph373_5_27"><a xlink:title="Broadcast is a subtype of RouterEnvelope"><path d="M1715,-118.683C1715,-108.896 1715,-96.9026 1715,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1713.25,-118.858 1715,-123.858 1716.75,-118.858 1713.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node trait" id="graph373_6"><a xlink:title="akka.routing.RouterConfig" xlink:href="RouterConfig.html#inheritance-diagram"><polygon points="1068.25,-150 965.75,-150 965.75,-124 1068.25,-124 1068.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="976" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="998" text-anchor="start">RouterConfig</text></a></g><!-- node6&#45;&gt;node1 --><g class="edge inheritance" id="graph373_6_1"><a xlink:title="SmallestMailboxRouter is a subtype of RouterConfig"><path d="M960.409,-124.623C958.926,-124.404 957.454,-124.195 956,-124 738.262,-94.7432 681.409,-111.733 463,-88 459.816,-87.654 456.566,-87.2788 453.285,-86.8821" stroke="#d4d4d4" fill="none"></path><polygon points="960.279,-126.374 965.488,-125.41 960.815,-122.915 960.279,-126.374" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6&#45;&gt;node3 --><g class="edge inheritance" id="graph373_6_3"><a xlink:title="ScatterGatherFirstCompletedRouter is a subtype of RouterConfig"><path d="M960.394,-124.725C958.915,-124.475 957.449,-124.233 956,-124 903.867,-115.607 770.574,-99.29 676.161,-88.0272" stroke="#d4d4d4" fill="none"></path><polygon points="960.235,-126.474 965.46,-125.601 960.831,-123.025 960.235,-126.474" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph373_7"><a xlink:title="akka.routing.RoundRobinRouter" xlink:href="RoundRobinRouter.html#inheritance-diagram"><polygon points="824,-88 694,-88 694,-62 824,-62 824,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="704" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="726" text-anchor="start">RoundRobinRouter</text></a></g><!-- node6&#45;&gt;node7 --><g class="edge inheritance" id="graph373_6_7"><a xlink:title="RoundRobinRouter is a subtype of RouterConfig"><path d="M960.632,-122.891C915.95,-112.5 854.023,-98.0983 810.625,-88.0058" stroke="#d4d4d4" fill="none"></path><polygon points="960.453,-124.646 965.719,-124.074 961.245,-121.237 960.453,-124.646" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph373_10"><a xlink:title="akka.routing.RandomRouter" xlink:href="RandomRouter.html#inheritance-diagram"><polygon points="954,-88 842,-88 842,-62 954,-62 954,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="852" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="874" text-anchor="start">RandomRouter</text></a></g><!-- node6&#45;&gt;node10 --><g class="edge inheritance" id="graph373_6_10"><a xlink:title="RandomRouter is a subtype of RouterConfig"><path d="M988.437,-121.599C968.156,-111.373 941.23,-97.7968 922.046,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="987.666,-123.17 992.919,-123.858 989.242,-120.044 987.666,-123.17" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node13 --><g class="node class" id="graph373_13"><a xlink:title="akka.routing.NoRouter" xlink:href="NoRouter.html#inheritance-diagram"><polygon points="1059.25,-88 972.75,-88 972.75,-62 1059.25,-62 1059.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="983" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1005" text-anchor="start">NoRouter</text></a></g><!-- node6&#45;&gt;node13 --><g class="edge inheritance" id="graph373_6_13"><a xlink:title="NoRouter is a subtype of RouterConfig"><path d="M1016.71,-118.683C1016.55,-108.896 1016.35,-96.9026 1016.2,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1014.96,-118.888 1016.8,-123.858 1018.46,-118.83 1014.96,-118.888" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node17 --><g class="node class" id="graph373_17"><a xlink:title="akka.routing.FromConfig" xlink:href="FromConfig.html#inheritance-diagram"><polygon points="1174.25,-88 1077.75,-88 1077.75,-62 1174.25,-62 1174.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1088" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1110" text-anchor="start">FromConfig</text></a></g><!-- node6&#45;&gt;node17 --><g class="edge inheritance" id="graph373_6_17"><a xlink:title="FromConfig is a subtype of RouterConfig"><path d="M1043.63,-121.34C1062.15,-111.145 1086.55,-97.7155 1103.98,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1042.59,-119.914 1039.06,-123.858 1044.28,-122.98 1042.59,-119.914" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node20 --><g class="node class" id="graph373_20"><a xlink:title="akka.routing.CustomRouterConfig" xlink:href="CustomRouterConfig.html#inheritance-diagram"><polygon points="1331,-88 1193,-88 1193,-62 1331,-62 1331,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1203" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1225" text-anchor="start">CustomRouterConfig</text></a></g><!-- node6&#45;&gt;node20 --><g class="edge inheritance" id="graph373_6_20"><a xlink:title="CustomRouterConfig is a subtype of RouterConfig"><path d="M1071.36,-122.687C1113.66,-112.327 1171.86,-98.0746 1212.79,-88.0504" stroke="#d4d4d4" fill="none"></path><polygon points="1070.72,-121.041 1066.28,-123.93 1071.56,-124.441 1070.72,-121.041" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node23 --><g class="node class" id="graph373_23"><a xlink:title="akka.routing.ConsistentHashingRouter" xlink:href="ConsistentHashingRouter.html#inheritance-diagram"><polygon points="1507,-88 1349,-88 1349,-62 1507,-62 1507,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1359" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1381" text-anchor="start">ConsistentHashingRouter</text></a></g><!-- node6&#45;&gt;node23 --><g class="edge inheritance" id="graph373_6_23"><a xlink:title="ConsistentHashingRouter is a subtype of RouterConfig"><path d="M1073.69,-127.725C1145.07,-117.304 1268.11,-99.3423 1348.77,-87.5671" stroke="#d4d4d4" fill="none"></path><polygon points="1073.33,-126.008 1068.64,-128.462 1073.84,-129.471 1073.33,-126.008" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node25 --><g class="node class" id="graph373_25"><a xlink:title="akka.routing.BroadcastRouter" xlink:href="BroadcastRouter.html#inheritance-diagram"><polygon points="1644.25,-88 1525.75,-88 1525.75,-62 1644.25,-62 1644.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1536" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1558" text-anchor="start">BroadcastRouter</text></a></g><!-- node6&#45;&gt;node25 --><g class="edge inheritance" id="graph373_6_25"><a xlink:title="BroadcastRouter is a subtype of RouterConfig"><path d="M1073.66,-131.965C1166.39,-125.044 1356.22,-109.547 1516,-88 1519.13,-87.5775 1522.34,-87.1171 1525.58,-86.6307" stroke="#d4d4d4" fill="none"></path><polygon points="1073.37,-130.232 1068.51,-132.348 1073.63,-133.722 1073.37,-130.232" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node trait" id="graph373_8"><a xlink:title="akka.routing.RoundRobinLike" xlink:href="RoundRobinLike.html#inheritance-diagram"><polygon points="818,-150 700,-150 700,-124 818,-124 818,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="710" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="732" text-anchor="start">RoundRobinLike</text></a></g><!-- node8&#45;&gt;node7 --><g class="edge inheritance" id="graph373_8_7"><a xlink:title="RoundRobinRouter is a subtype of RoundRobinLike"><path d="M759,-118.683C759,-108.896 759,-96.9026 759,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="757.25,-118.858 759,-123.858 760.75,-118.858 757.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node trait" id="graph373_9"><a xlink:title="akka.routing.Resizer" xlink:href="Resizer.html#inheritance-diagram"><polygon points="1872,-150 1794,-150 1794,-124 1872,-124 1872,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="1804" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1826" text-anchor="start">Resizer</text></a></g><!-- node18 --><g class="node class" id="graph373_18"><a xlink:title="akka.routing.DefaultResizer" xlink:href="DefaultResizer.html#inheritance-diagram"><polygon points="1888,-88 1778,-88 1778,-62 1888,-62 1888,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="1788" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1810" text-anchor="start">DefaultResizer</text></a></g><!-- node9&#45;&gt;node18 --><g class="edge inheritance" id="graph373_9_18"><a xlink:title="DefaultResizer is a subtype of Resizer"><path d="M1833,-118.683C1833,-108.896 1833,-96.9026 1833,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1831.25,-118.858 1833,-123.858 1834.75,-118.858 1831.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node trait" id="graph373_11"><a xlink:title="akka.routing.RandomLike" xlink:href="RandomLike.html#inheritance-diagram"><polygon points="947,-150 847,-150 847,-124 947,-124 947,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="857" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="879" text-anchor="start">RandomLike</text></a></g><!-- node11&#45;&gt;node10 --><g class="edge inheritance" id="graph373_11_10"><a xlink:title="RandomRouter is a subtype of RandomLike"><path d="M897.289,-118.683C897.452,-108.896 897.652,-96.9026 897.798,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="895.536,-118.83 897.202,-123.858 899.036,-118.888 895.536,-118.83" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node12 --><g class="node object" id="graph373_12"><a xlink:title="akka.routing.NoRouter" xlink:href="NoRouter$.html#inheritance-diagram"><polygon points="1059.25,-26 972.75,-26 972.75,-0 1059.25,-0 1059.25,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-21" x="983" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="1005" text-anchor="start">NoRouter</text></a></g><!-- node13&#45;&gt;node12 --><g class="edge inheritance" id="graph373_13_12"><a xlink:title="NoRouter is a subtype of NoRouter"><path d="M1016,-56.6826C1016,-46.8961 1016,-34.9026 1016,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1014.25,-56.8581 1016,-61.8581 1017.75,-56.8581 1014.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node14 --><g class="node trait" id="graph373_14"><a xlink:title="akka.routing.ListenerMessage" xlink:href="ListenerMessage.html#inheritance-diagram"><polygon points="218,-150 98,-150 98,-124 218,-124 218,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="108" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="130" text-anchor="start">ListenerMessage</text></a></g><!-- node14&#45;&gt;node0 --><g class="edge inheritance" id="graph373_14_0"><a xlink:title="WithListeners is a subtype of ListenerMessage"><path d="M132.101,-121.34C114.089,-111.145 90.364,-97.7155 73.4188,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="131.336,-122.918 136.549,-123.858 133.06,-119.872 131.336,-122.918" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node15 --><g class="node class" id="graph373_15"><a xlink:title="akka.routing.Listen" xlink:href="Listen.html#inheritance-diagram"><polygon points="193.25,-88 122.75,-88 122.75,-62 193.25,-62 193.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="133" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="155" text-anchor="start">Listen</text></a></g><!-- node14&#45;&gt;node15 --><g class="edge inheritance" id="graph373_14_15"><a xlink:title="Listen is a subtype of ListenerMessage"><path d="M158,-118.683C158,-108.896 158,-96.9026 158,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="156.25,-118.858 158,-123.858 159.75,-118.858 156.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node19 --><g class="node class" id="graph373_19"><a xlink:title="akka.routing.Deafen" xlink:href="Deafen.html#inheritance-diagram"><polygon points="288.25,-88 211.75,-88 211.75,-62 288.25,-62 288.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="222" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="244" text-anchor="start">Deafen</text></a></g><!-- node14&#45;&gt;node19 --><g class="edge inheritance" id="graph373_14_19"><a xlink:title="Deafen is a subtype of ListenerMessage"><path d="M180.877,-121.08C196.46,-110.917 216.828,-97.6342 231.41,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="179.85,-119.661 176.618,-123.858 181.762,-122.593 179.85,-119.661" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node16 --><g class="node object" id="graph373_16"><a xlink:title="akka.routing.FromConfig" xlink:href="FromConfig$.html#inheritance-diagram"><polygon points="1174.25,-26 1077.75,-26 1077.75,-0 1174.25,-0 1174.25,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-21" x="1088" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-9" x="1110" text-anchor="start">FromConfig</text></a></g><!-- node17&#45;&gt;node16 --><g class="edge inheritance" id="graph373_17_16"><a xlink:title="FromConfig is a subtype of FromConfig"><path d="M1126,-56.6826C1126,-46.8961 1126,-34.9026 1126,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1124.25,-56.8581 1126,-61.8581 1127.75,-56.8581 1124.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node21 --><g class="node object" id="graph373_21"><a xlink:title="akka.routing.CurrentRoutees" xlink:href="CurrentRoutees$.html#inheritance-diagram"><polygon points="2021.25,-88 1906.75,-88 1906.75,-62 2021.25,-62 2021.25,-88" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../lib/object_diagram.png" y="-83" x="1917" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-71" x="1939" text-anchor="start">CurrentRoutees</text></a></g><!-- node22 --><g class="node class" id="graph373_22"><a xlink:title="akka.routing.CurrentRoutees" xlink:href="CurrentRoutees.html#inheritance-diagram"><polygon points="2021.25,-150 1906.75,-150 1906.75,-124 2021.25,-124 2021.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-145" x="1917" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1939" text-anchor="start">CurrentRoutees</text></a></g><!-- node22&#45;&gt;node21 --><g class="edge inheritance" id="graph373_22_21"><a xlink:title="CurrentRoutees is a subtype of CurrentRoutees"><path d="M1964,-118.683C1964,-108.896 1964,-96.9026 1964,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1962.25,-118.858 1964,-123.858 1965.75,-118.858 1962.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node24 --><g class="node trait" id="graph373_24"><a xlink:title="akka.routing.ConsistentHashingLike" xlink:href="ConsistentHashingLike.html#inheritance-diagram"><polygon points="1501.25,-150 1354.75,-150 1354.75,-124 1501.25,-124 1501.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="1365" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1387" text-anchor="start">ConsistentHashingLike</text></a></g><!-- node24&#45;&gt;node23 --><g class="edge inheritance" id="graph373_24_23"><a xlink:title="ConsistentHashingRouter is a subtype of ConsistentHashingLike"><path d="M1428,-118.683C1428,-108.896 1428,-96.9026 1428,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1426.25,-118.858 1428,-123.858 1429.75,-118.858 1426.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node26 --><g class="node trait" id="graph373_26"><a xlink:title="akka.routing.BroadcastLike" xlink:href="BroadcastLike.html#inheritance-diagram"><polygon points="1639,-150 1531,-150 1531,-124 1639,-124 1639,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="1541" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-133" x="1563" text-anchor="start">BroadcastLike</text></a></g><!-- node26&#45;&gt;node25 --><g class="edge inheritance" id="graph373_26_25"><a xlink:title="BroadcastRouter is a subtype of BroadcastLike"><path d="M1585,-118.683C1585,-108.896 1585,-96.9026 1585,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1583.25,-118.858 1585,-123.858 1586.75,-118.858 1583.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="akka.routing"><span>routing</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="akka.routing.Broadcast" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BroadcastextendsRouterEnvelopewithProductwithSerializable"></a>
+      <a id="Broadcast:Broadcast"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Broadcast.html"><span class="name">Broadcast</span></a><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result"> extends <a href="RouterEnvelope.html" class="extype" name="akka.routing.RouterEnvelope">RouterEnvelope</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Used to broadcast a message to all connections in a router; only the
+contained message will be forwarded, i.</p>
+    </li><li name="akka.routing.BroadcastLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BroadcastLikeextendsAnyRef"></a>
+      <a id="BroadcastLike:BroadcastLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BroadcastLike.html"><span class="name">BroadcastLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.BroadcastRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BroadcastRouterextendsRouterConfigwithBroadcastLikewithOverrideUnsetConfig[akka.routing.BroadcastRouter]withProductwithSerializable"></a>
+      <a id="BroadcastRouter:BroadcastRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BroadcastRouter.html"><span class="name">BroadcastRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="BroadcastLike.html" class="extype" name="akka.routing.BroadcastLike">BroadcastLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="BroadcastRouter.html" class="extype" name="akka.routing.BroadcastRouter">BroadcastRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that uses broadcasts a message to all its connections.</p>
+    </li><li name="akka.routing.ConsistentHash" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsistentHash[T]extendsAnyRef"></a>
+      <a id="ConsistentHash[T]:ConsistentHash[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsistentHash.html"><span class="name">ConsistentHash</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Consistent Hashing node ring implementation.</p>
+    </li><li name="akka.routing.ConsistentHashingLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConsistentHashingLikeextendsAnyRef"></a>
+      <a id="ConsistentHashingLike:ConsistentHashingLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsistentHashingLike.html"><span class="name">ConsistentHashingLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.ConsistentHashingRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsistentHashingRouterextendsRouterConfigwithConsistentHashingLikewithOverrideUnsetConfig[akka.routing.ConsistentHashingRouter]withProductwithSerializable"></a>
+      <a id="ConsistentHashingRouter:ConsistentHashingRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsistentHashingRouter.html"><span class="name">ConsistentHashingRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>, <span name="virtualNodesFactor">virtualNodesFactor: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="hashMapping">hashMapping: <a href="ConsistentHashingRouter$.html#ConsistentHashMapping=PartialFunction[Any,Any]" class="extmbr" name="akka.routing.ConsistentHashingRouter.ConsistentHashMapping">ConsistentHashMapping</a> = <span class="defval" name="ConsistentHashingRouter.emptyConsistentHashMapping">...</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="ConsistentHashingLike.html" class="extype" name="akka.routing.ConsistentHashingLike">ConsistentHashingLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="ConsistentHashingRouter.html" class="extype" name="akka.routing.ConsistentHashingRouter">ConsistentHashingRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that uses consistent hashing to select a connection based on the
+sent message.</p>
+    </li><li name="akka.routing.CurrentRoutees" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CurrentRouteesextendsAnyRef"></a>
+      <a id="CurrentRoutees:CurrentRoutees"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CurrentRoutees.html"><span class="name">CurrentRoutees</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Sending this message to a router will make it send back its currently used routees.</p>
+    </li><li name="akka.routing.CustomRoute" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CustomRouteextendsAnyRef"></a>
+      <a id="CustomRoute:CustomRoute"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomRoute.html"><span class="name">CustomRoute</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Java API helper for creating a single-destination routing.</p>
+    </li><li name="akka.routing.CustomRouterConfig" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CustomRouterConfigextendsRouterConfig"></a>
+      <a id="CustomRouterConfig:CustomRouterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CustomRouterConfig.html"><span class="name">CustomRouterConfig</span></a><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Java API for a custom router factory.</p>
+    </li><li name="akka.routing.Deafen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeafenextendsListenerMessagewithProductwithSerializable"></a>
+      <a id="Deafen:Deafen"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Deafen.html"><span class="name">Deafen</span></a><span class="params">(<span name="listener">listener: <a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>)</span><span class="result"> extends <a href="ListenerMessage.html" class="extype" name="akka.routing.ListenerMessage">ListenerMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.DefaultResizer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultResizerextendsResizerwithProductwithSerializable"></a>
+      <a id="DefaultResizer:DefaultResizer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultResizer.html"><span class="name">DefaultResizer</span></a><span class="params">(<span name="lowerBound">lowerBound: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="upperBound">upperBound: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">10</span></span>, <span name="pressureThreshold">pressureThreshold: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">1</span></span>, <span name="rampupRate">rampupRate: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.2</span></span>, <span name="backoffThreshold">backoffThreshold: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.3</span></span>, <span name="backoffRate">backoffRate: <span class="extype" name="scala.Double">Double</span> = <span class="symbol">0.1</span></span>, <span name="stopDelay">stopDelay: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span> = <span class="defval" name="scala.concurrent.duration.`package`.DurationInt(1).second">...</span></span>, <span name="messagesPerResize">messagesPerResize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">10</span></span>)</span><span class="result"> extends <a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">(<span>
+      
+      <span class="symbol">1L</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.routing.Destination" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DestinationextendsProductwithSerializable"></a>
+      <a id="Destination:Destination"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Destination.html"><span class="name">Destination</span></a><span class="params">(<span name="sender">sender: <a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>, <span name="recipient">recipient: <a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">For every message sent to a router, its route determines a set of destinations,
+where for each recipient a different sender may be specified; typically the
+sender should match the sender of the original request, but e.</p>
+    </li><li name="akka.routing.FromConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FromConfigextendsRouterConfigwithSerializable"></a>
+      <a id="FromConfig:FromConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FromConfig.html"><span class="name">FromConfig</span></a><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Java API: Router configuration which has no default, i.</p>
+    </li><li name="akka.routing.Listen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ListenextendsListenerMessagewithProductwithSerializable"></a>
+      <a id="Listen:Listen"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Listen.html"><span class="name">Listen</span></a><span class="params">(<span name="listener">listener: <a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a></span>)</span><span class="result"> extends <a href="ListenerMessage.html" class="extype" name="akka.routing.ListenerMessage">ListenerMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.ListenerMessage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ListenerMessageextendsAnyRef"></a>
+      <a id="ListenerMessage:ListenerMessage"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ListenerMessage.html"><span class="name">ListenerMessage</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.Listeners" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ListenersextendsAnyRef"></a>
+      <a id="Listeners:Listeners"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Listeners.html"><span class="name">Listeners</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Listeners is a generic trait to implement listening capability on an Actor.</p>
+    </li><li name="akka.routing.NoRouter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NoRouterextendsRouterConfig"></a>
+      <a id="NoRouter:NoRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NoRouter.html"><span class="name">NoRouter</span></a><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Routing configuration that indicates no routing; this is also the default
+value which hence overrides the merge strategy in order to accept values
+from lower-precedence sources.</p>
+    </li><li name="akka.routing.RandomLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RandomLikeextendsAnyRef"></a>
+      <a id="RandomLike:RandomLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomLike.html"><span class="name">RandomLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.RandomRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RandomRouterextendsRouterConfigwithRandomLikewithOverrideUnsetConfig[akka.routing.RandomRouter]withProductwithSerializable"></a>
+      <a id="RandomRouter:RandomRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomRouter.html"><span class="name">RandomRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="RandomLike.html" class="extype" name="akka.routing.RandomLike">RandomLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="RandomRouter.html" class="extype" name="akka.routing.RandomRouter">RandomRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that randomly selects one of the target connections to send a message to.</p>
+    </li><li name="akka.routing.Resizer" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResizerextendsAnyRef"></a>
+      <a id="Resizer:Resizer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Resizer.html"><span class="name">Resizer</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Routers with dynamically resizable number of routees is implemented by providing a Resizer
+implementation in <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">akka.routing.RouterConfig</a>.</p>
+    </li><li name="akka.routing.RoundRobinLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RoundRobinLikeextendsAnyRef"></a>
+      <a id="RoundRobinLike:RoundRobinLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RoundRobinLike.html"><span class="name">RoundRobinLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.RoundRobinRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RoundRobinRouterextendsRouterConfigwithRoundRobinLikewithOverrideUnsetConfig[akka.routing.RoundRobinRouter]withProductwithSerializable"></a>
+      <a id="RoundRobinRouter:RoundRobinRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RoundRobinRouter.html"><span class="name">RoundRobinRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="RoundRobinLike.html" class="extype" name="akka.routing.RoundRobinLike">RoundRobinLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="RoundRobinRouter.html" class="extype" name="akka.routing.RoundRobinRouter">RoundRobinRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that uses round-robin to select a connection.</p>
+    </li><li name="akka.routing.Route" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Route=PartialFunction[(akka.actor.ActorRef,Any),scala.collection.immutable.Iterable[akka.routing.Destination]]"></a>
+      <a id="Route:Route"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Route</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[(<a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>, <span class="extype" name="scala.Any">Any</span>), <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<a href="Destination.html" class="extype" name="akka.routing.Destination">Destination</a>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Routing logic, partial function from (sender, message) to a
+set of destinations.</p>
+    </li><li name="akka.routing.RouteeProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RouteeProviderextendsAnyRef"></a>
+      <a id="RouteeProvider:RouteeProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RouteeProvider.html"><span class="name">RouteeProvider</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Factory and registry for routees of the router.</p>
+    </li><li name="akka.routing.Router" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RouterextendsActor"></a>
+      <a id="Router:Router"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Router.html"><span class="name">Router</span></a><span class="result"> extends <a href="../actor/Actor.html" class="extype" name="akka.actor.Actor">Actor</a></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Base trait for <code>Router</code> actors.</p>
+    </li><li name="akka.routing.RouterConfig" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RouterConfigextendsAnyRef"></a>
+      <a id="RouterConfig:RouterConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RouterConfig.html"><span class="name">RouterConfig</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">This trait represents a router factory: it produces the actual router actor
+and creates the routing table (a function which determines the recipients
+for each message which is to be dispatched).</p>
+    </li><li name="akka.routing.RouterEnvelope" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RouterEnvelopeextendsAnyRef"></a>
+      <a id="RouterEnvelope:RouterEnvelope"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RouterEnvelope.html"><span class="name">RouterEnvelope</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Only the contained message will be forwarded to the
+destination, i.</p>
+    </li><li name="akka.routing.RouterRoutees" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RouterRouteesextendsProductwithSerializable"></a>
+      <a id="RouterRoutees:RouterRoutees"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RouterRoutees.html"><span class="name">RouterRoutees</span></a><span class="params">(<span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Message used to carry information about what routees the router is currently using.</p>
+    </li><li name="akka.routing.ScatterGatherFirstCompletedLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ScatterGatherFirstCompletedLikeextendsAnyRef"></a>
+      <a id="ScatterGatherFirstCompletedLike:ScatterGatherFirstCompletedLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ScatterGatherFirstCompletedLike.html"><span class="name">ScatterGatherFirstCompletedLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.ScatterGatherFirstCompletedRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScatterGatherFirstCompletedRouterextendsRouterConfigwithScatterGatherFirstCompletedLikewithOverrideUnsetConfig[akka.routing.ScatterGatherFirstCompletedRouter]withProductwithSerializable"></a>
+      <a id="ScatterGatherFirstCompletedRouter:ScatterGatherFirstCompletedRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ScatterGatherFirstCompletedRouter.html"><span class="name">ScatterGatherFirstCompletedRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="within">within: <span class="extype" name="scala.concurrent.duration.FiniteDuration">FiniteDuration</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="ScatterGatherFirstCompletedLike.html" class="extype" name="akka.routing.ScatterGatherFirstCompletedLike">ScatterGatherFirstCompletedLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="ScatterGatherFirstCompletedRouter.html" class="extype" name="akka.routing.ScatterGatherFirstCompletedRouter">ScatterGatherFirstCompletedRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Simple router that broadcasts the message to all routees, and replies with the first response.</p>
+    </li><li name="akka.routing.SmallestMailboxLike" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SmallestMailboxLikeextendsAnyRef"></a>
+      <a id="SmallestMailboxLike:SmallestMailboxLike"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SmallestMailboxLike.html"><span class="name">SmallestMailboxLike</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The core pieces of the routing logic is located in this
+trait to be able to extend.</p>
+    </li><li name="akka.routing.SmallestMailboxRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SmallestMailboxRouterextendsRouterConfigwithSmallestMailboxLikewithOverrideUnsetConfig[akka.routing.SmallestMailboxRouter]withProductwithSerializable"></a>
+      <a id="SmallestMailboxRouter:SmallestMailboxRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SmallestMailboxRouter.html"><span class="name">SmallestMailboxRouter</span></a><span class="params">(<span name="nrOfInstances">nrOfInstances: <span class="extype" name="scala.Int">Int</span> = <span class="symbol">0</span></span>, <span name="routees">routees: <span class="extype" name="scala.collection.immutable.Iterable">Iterable</span>[<span class="extype" name="scala.Predef.String">String</span>] = <span class="symbol">immutable.this.Nil</span></span>, <span name="resizer">resizer: <span class="extype" name="scala.Option">Option</span>[<a href="Resizer.html" class="extype" name="akka.routing.Resizer">Resizer</a>] = <span class="symbol">scala.None</span></span>, <span name="routerDispatcher">routerDispatcher: <span class="extype" name="scala.Predef.String">String</span> = <span class="defval" name="akka.dispatch.Dispatchers.DefaultDispatcherId">...</span></span>, <span name="supervisorStrategy">supervisorStrategy: <a href="../actor/SupervisorStrategy.html" class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</a> = <span class="symbol">Router.defaultSupervisorStrategy</span></span>)</span><span class="result"> extends <a href="RouterConfig.html" class="extype" name="akka.routing.RouterConfig">RouterConfig</a> with <a href="SmallestMailboxLike.html" class="extype" name="akka.routing.SmallestMailboxLike">SmallestMailboxLike</a> with <span class="extype" name="akka.routing.OverrideUnsetConfig">OverrideUnsetConfig</span>[<a href="SmallestMailboxRouter.html" class="extype" name="akka.routing.SmallestMailboxRouter">SmallestMailboxRouter</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Router that tries to send to the non-suspended routee with fewest messages in mailbox.</p>
+    </li><li name="akka.routing.WithListeners" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WithListenersextendsListenerMessagewithProductwithSerializable"></a>
+      <a id="WithListeners:WithListeners"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="WithListeners.html"><span class="name">WithListeners</span></a><span class="params">(<span name="f">f: (<a href="../actor/ActorRef.html" class="extype" name="akka.actor.ActorRef">ActorRef</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result"> extends <a href="ListenerMessage.html" class="extype" name="akka.routing.ListenerMessage">ListenerMessage</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="akka.routing.BroadcastRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BroadcastRouter"></a>
+      <a id="BroadcastRouter:BroadcastRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BroadcastRouter$.html"><span class="name">BroadcastRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.ConsistentHash" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsistentHash"></a>
+      <a id="ConsistentHash:ConsistentHash"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsistentHash$.html"><span class="name">ConsistentHash</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.ConsistentHashingRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConsistentHashingRouter"></a>
+      <a id="ConsistentHashingRouter:ConsistentHashingRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ConsistentHashingRouter$.html"><span class="name">ConsistentHashingRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.CurrentRoutees" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CurrentRoutees"></a>
+      <a id="CurrentRoutees:CurrentRoutees"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CurrentRoutees$.html"><span class="name">CurrentRoutees</span></a><span class="result"> extends <a href="CurrentRoutees.html" class="extype" name="akka.routing.CurrentRoutees">CurrentRoutees</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SerialVersionUID</span><span class="args">(<span>
+      
+      <span class="symbol">1L</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.routing.DefaultResizer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultResizer"></a>
+      <a id="DefaultResizer:DefaultResizer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultResizer$.html"><span class="name">DefaultResizer</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.FromConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FromConfig"></a>
+      <a id="FromConfig:FromConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FromConfig$.html"><span class="name">FromConfig</span></a><span class="result"> extends <a href="FromConfig.html" class="extype" name="akka.routing.FromConfig">FromConfig</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Router configuration which has no default, i.</p>
+    </li><li name="akka.routing.MurmurHash" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MurmurHash"></a>
+      <a id="MurmurHash:MurmurHash"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MurmurHash$.html"><span class="name">MurmurHash</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">An object designed to generate well-distributed non-cryptographic
+ hashes.</p>
+    </li><li name="akka.routing.NoRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoRouter"></a>
+      <a id="NoRouter:NoRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NoRouter$.html"><span class="name">NoRouter</span></a><span class="result"> extends <a href="NoRouter.html" class="extype" name="akka.routing.NoRouter">NoRouter</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.RandomRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RandomRouter"></a>
+      <a id="RandomRouter:RandomRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RandomRouter$.html"><span class="name">RandomRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.RoundRobinRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RoundRobinRouter"></a>
+      <a id="RoundRobinRouter:RoundRobinRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RoundRobinRouter$.html"><span class="name">RoundRobinRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.ScatterGatherFirstCompletedRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScatterGatherFirstCompletedRouter"></a>
+      <a id="ScatterGatherFirstCompletedRouter:ScatterGatherFirstCompletedRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ScatterGatherFirstCompletedRouter$.html"><span class="name">ScatterGatherFirstCompletedRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="akka.routing.SmallestMailboxRouter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SmallestMailboxRouter"></a>
+      <a id="SmallestMailboxRouter:SmallestMailboxRouter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SmallestMailboxRouter$.html"><span class="name">SmallestMailboxRouter</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../lib/template.js"></script><script defer="defer" type="text/javascript" id="modernizr-custom-js" src="../../lib/modernizr.custom.js"></script><script defer="defer" type="text/javascript" id="diagrams-js" src="../../lib/diagrams.js"></script>
+    </body>
+      </html>
