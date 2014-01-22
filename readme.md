@@ -3,7 +3,7 @@
 A simple template to get started with a new Scala project.
 The project includes the following dependencies
 
-+ akka-actor (2.2.0)
++ akka-actor (2.2.3)
 
 
 ### IntelliJ
