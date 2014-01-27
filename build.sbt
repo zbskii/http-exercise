@@ -1,4 +1,4 @@
-name := "TestIntelliJSetup"
+name := "HttpExample"
 
 version := "0.0.1"
 
@@ -9,3 +9,7 @@ resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/release
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.2.3"
 
 libraryDependencies += "org.scalaj" %% "scalaj-http" % "0.3.10"
+
+libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "0.6.0"
+
+libraryDependencies += "joda-time" % "joda-time" % "2.3"
